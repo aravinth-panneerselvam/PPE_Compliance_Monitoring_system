@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial_scale = 1.0">
+    <title> Industry PPE Compliance </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ppe_compliance.css') }}">
+
+
+    <style>
+        .left {
+            width: 46%;
+            background: url("{{ url_for('static', filename='images/ppe1.jpg') }}") no-repeat;
+            background-size: cover;
+            background-position: 55% 25%;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <section> 
+
+        <div class="container">
+
+            <div class="left"></div>
+
+            <div class="right">
+                <h1 class="main-title"> PPE Compliance Monitoring System </h1>
+                
+                
+                <div class="general-login">
+                    <form action="/login" method="POST">
+
+                        <h2> Login </h2>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" name="email" required>
+                            <label>Email</label> 
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="password" required>
+                            <label> Password / PIN </label>
+                        </div>
+
+                        <button type="submit"> Login </button>
+
+                        <div class="separator"> OR  </div>
+
+                        <div class="face-login">
+                            <button class="face-btn">
+                                <span class="icon"></span><ion-icon name="scan-circle-outline"></ion-icon></span>
+                                Login with Face ID 
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
